@@ -45,7 +45,11 @@ def chord_method(func, left, right, eps=1e-6):
         x0 = t
     return x1
 
-
+def hord_method_for_system():
+    def first_equation(x, y):
+        return np.sin(x+1)-y - 1.2
+    def second_equation(x, y):
+        return 2 * x
 def first_func(x):
     return x ** 3 - 3 * x - 2 * math.e ** (-x)
 
